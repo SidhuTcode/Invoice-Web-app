@@ -1,0 +1,50 @@
+﻿@using Invoice.Data.Entities
+@model Customer
+
+<div class="mb-3">
+
+    <div class="text-danger" asp-validation-summary="All"></div>
+
+    <label class="form-label" asp-for="@Model.Name">Name</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.Name" />
+
+    <label class="form-label" asp-for="@Model.Address1">Address1</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.Address1" />
+
+    <label class="form-label" asp-for="@Model.Address2">Address2</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.Address2" />
+
+
+    <label class="form-label" asp-for="@Model.City">City</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.City" />
+
+    <label class="form-label" asp-for="@Model.ProvinceOrState">ProvinceOrState</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.ProvinceOrState" />
+
+
+    <label class="form-label" asp-for="@Model.ZipOrPostalCode">ZipOrPostalCode</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.ZipOrPostalCode" />
+
+    <label class="form-label" asp-for="@Model.Phone">Phone</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.Phone" />
+
+    <label class="form-label" asp-for="@Model.ContactFirstName">ContactFirstName</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.ContactFirstName" />
+
+    <label class="form-label" asp-for="@Model.ContactLastName">ContactLastName</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.ContactLastName" />
+
+    <label class="form-label" asp-for="@Model.ContactEmail">Email</label>
+    <span class="text-danger"></span>
+    <input class="form-control" type="text" asp-for="@Model.ContactEmail" />
+
+</div>

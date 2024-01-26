@@ -1,0 +1,24 @@
+D:\MS PROG\TSAssignment3\Invoice.Data\bin\Debug\net7.0\Invoice.Data.deps.json
+D:\MS PROG\TSAssignment3\Invoice.Data\bin\Debug\net7.0\Invoice.Data.dll
+D:\MS PROG\TSAssignment3\Invoice.Data\bin\Debug\net7.0\Invoice.Data.pdb
+D:\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.csproj.AssemblyReference.cache
+D:\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.AssemblyInfoInputs.cache
+D:\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.AssemblyInfo.cs
+D:\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.csproj.CoreCompileInputs.cache
+D:\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.dll
+D:\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\refint\Invoice.Data.dll
+D:\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.pdb
+D:\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\ref\Invoice.Data.dll
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\bin\Debug\net7.0\Invoice.Data.deps.json
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\bin\Debug\net7.0\Invoice.Data.dll
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\bin\Debug\net7.0\Invoice.Data.pdb
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.csproj.AssemblyReference.cache
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.AssemblyInfoInputs.cache
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.AssemblyInfo.cs
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.csproj.CoreCompileInputs.cache
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.dll
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\refint\Invoice.Data.dll
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\Invoice.Data.pdb
+D:\Sem 3\MS PROG\TSAssignment3\Invoice.Data\obj\Debug\net7.0\ref\Invoice.Data.dll

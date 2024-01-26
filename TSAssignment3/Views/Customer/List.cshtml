@@ -1,0 +1,81 @@
+﻿@model CustomersViewModel
+
+@{
+    ViewData["Title"] = "All Customers";
+}
+
+<h1>@ViewBag.Title</h1>
+
+
+
+@if (TempData.ContainsKey("Message"))
+{
+    <div class="alert alert-@TempData["ClassName"] alert-dismissible fade show" role="alert">
+        @TempData["Message"]
+        @if (TempData.ContainsKey("CustomerId"))
+        {
+            <p> <a asp-action="UndoDelete" asp-route-customerId="@TempData["CustomerId"]">Undo</a> this delete.</p>
+        }
+
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="border border-3 border-dark p-3">
+    <a asp-action="Add"> Add a new customer</a>
+
+    @if (Model.Customers?.Count > 0)
+    {
+        <table class="table border border-dark border-3 font-weight-bold">
+            <thead class="table border border-dark border-3 font-weight-bold">
+                <tr class="table border border-dark border-3 font-weight-bold">
+                    <th class="border-end">Name</th>
+                    <th class="border-end">Address</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody class="table border border-dark border-3 font-weight-bold">
+                @foreach (var customer in Model.Customers)
+                {
+                    <tr class="table border border-dark border-3 font-weight-bold">
+                        <td class="border-end">@customer.Name</td>
+                        <td class="border-end">@customer.Address1 @customer.ProvinceOrState</td>
+                        <td>
+                            
+                            <a asp-action="InvoiceDetails" asp-route-customerId="@customer.CustomerId">Invoices</a>
+                            <span class="mx-1">|</span>
+                            <a asp-action="Edit" asp-route-customerId="@customer.CustomerId">Edit</a>
+                            <span class="mx-1">|</span>
+                            <a asp-action="Delete" asp-route-customerId="@customer.CustomerId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+        <nav>
+            <ul class="pagination">
+                <li class="page-item @(Model.ActivePage =="A-E"? "active":"")">
+                    <a class="page-link" asp-controller="Customer" asp-action="List" asp-route-filterFrom="A" asp-route-filterTo="E">A-E</a>
+                </li>
+                <li class="page-item @(Model.ActivePage =="F-K"? "active":"")">
+                    <a class="page-link" asp-controller="Customer" asp-action="List" asp-route-filterFrom="F" asp-route-filterTo="K">F-K</a>
+                </li>
+                <li class="page-item @(Model.ActivePage =="L-R"? "active":"")">
+                    <a class="page-link" asp-controller="Customer" asp-action="List" asp-route-filterFrom="L" asp-route-filterTo="R">L-R</a>
+                </li>
+                <li class="page-item @(Model.ActivePage =="S-Z"? "active":"")">
+                    <a class="page-link" asp-controller="Customer" asp-action="List" asp-route-filterFrom="S" asp-route-filterTo="Z">S-Z</a>
+                </li>
+            </ul>
+        </nav>
+    }
+    else
+    {
+        <div class="alert alert-primary" role="alert">
+            Add a customer
+        </div>
+    }
+</div>

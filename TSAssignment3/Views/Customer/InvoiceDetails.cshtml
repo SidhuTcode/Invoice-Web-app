@@ -1,0 +1,60 @@
+﻿@model InvoiceViewModel
+
+<div class="row">
+    <div class="col-md-6">
+       
+        <table class="table">
+            <thead class="table border border-dark border-3 font-weight-bold">
+                <tr class="table border border-dark border-3 font-weight-bold">
+                    <th class="border-end">Invoices</th>
+                    <th class="border-end">Due Date:</th>
+                    <th>Amount Paid</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+           
+                    <h2>Invoices</h2>
+           
+                      <form asp-action="AddLineItem" asp-controller="Invoice" method="post">
+                          <div class="form-group">
+                              <label for="Description">Date:</label>
+                              <input type="text" class="form-control" name="Description" required />
+                          </div>
+                          <div class="form-group">
+                              <label for="Amount">Terms:</label>
+                <input type="number" class="form-control" name="Amount" required />
+                    </form>
+            </div>
+                </tr>
+            </thead>
+            <tbody>
+                @* @foreach (var lineItem in Model.LineItems)
+                {
+                    <tr>
+                        <td>@lineItem.Description</td>
+                        <td>@lineItem.Amount</td>
+                    </tr>
+                } *@
+            </tbody>
+        </table>
+        <button type="submit" class="btn btn-primary">Add Invoice</button>
+    </div>
+
+    <div class="col-md-6">
+        <h2>Add New Line Item</h2>
+        <form asp-action="AddLineItem" asp-controller="Invoice" method="post">
+            <div class="form-group">
+                <label for="Description">Description:</label>
+                <input type="text" class="form-control" name="Description" required />
+            </div>
+            <div class="form-group">
+                <label for="Amount">Amount:</label>
+                <input type="number" class="form-control" name="Amount" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Add Line Item</button>
+        </form>
+
+       
+    </div>
+</div>
